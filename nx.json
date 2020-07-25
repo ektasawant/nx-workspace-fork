@@ -71,6 +71,9 @@
     },
     "shared-styles": {
       "tags": ["scope:shared", "type:styles"]
+    },
+    "products-index-page": {
+      "tags": []
     }
   }
 }

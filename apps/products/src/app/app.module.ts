@@ -25,6 +25,13 @@ import { AppComponent } from './app.component';
             import('@nx-example/products/product-detail-page').then(
               module => module.ProductsProductDetailPageModule
             )
+        },
+        {
+          path: 'product/index',
+          loadChildren: () =>
+            import('@nx-example/products/index-page').then(
+              module => module.ProductsIndexPageModule
+            )
         }
       ],
       { initialNavigation: 'enabled' }

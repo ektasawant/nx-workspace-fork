@@ -92,48 +92,7 @@ export const CartCartPage = () => {
 
   return (
     <StyledUl>
-      {cartState.items.map((item: CartItem) => (
-        <StyledLi key={item.productId}>
-          <a href={`/product/${item.productId}`}>
-            <figure>
-              <img src={getProduct(productsState, item.productId).image} />
-            </figure>
-          </a>
-          <a href={`/product/${item.productId}`} className="title">
-            <h2>{getProduct(productsState, item.productId).name}</h2>
-          </a>
-          <p>
-            <nx-example-product-price
-              value={getProduct(productsState, item.productId).price}
-            />
-          </p>
-          <select
-            value={item.quantity}
-            onChange={event => {
-              dispatch(new SetQuantity(item.productId, +event.target.value));
-            }}
-          >
-            {optionsArray.map((_, i) => (
-              <option key={i} value={i}>
-                {i}
-              </option>
-            ))}
-          </select>
-          <p>
-            <nx-example-product-price
-              value={getItemCost(item, productsState)}
-            />
-          </p>
-        </StyledLi>
-      ))}
-      <StyledTotalLi>
-        <h2>Total</h2>
-        <p>
-          <nx-example-product-price
-            value={getTotalCost(cartState, productsState)}
-          />
-        </p>
-      </StyledTotalLi>
+     <a href="/product/index">Ekta</a>
     </StyledUl>
   );
 };

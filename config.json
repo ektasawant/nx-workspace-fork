@@ -1,0 +1,12 @@
+{
+    "routes": [
+      {
+        "route": "/cart",
+        "address": "http://localhost:1001"
+      },
+      {
+        "route": "/product",
+        "address": "http://localhost:1002"
+      }
+    ]
+  }
